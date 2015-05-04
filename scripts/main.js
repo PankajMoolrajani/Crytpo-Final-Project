@@ -1,20 +1,21 @@
+
+
+function getNounce(){
+var username = $("#username").val();
+
+	$.ajax({
+		url:"./php/verification.php",
+		type:'post',
+		data:{"username":username},
+		success:function(data){
+			alert(data);
+		}
+
+	});
+}
+
 $(document).ready(function (){
 	$("#loginButton").click(function(){
-		alert("login button");
-		username = $("#email").val();
-		getNonce(username);
-		
-		});
+			getNounce();
 	});
 });
-
-function getNonce(username){
-	$.ajax({
-		type: "POST",
-		url: "../php/verification.php"
-		data: {"username": username},
-		dataType: "json",
-		success: function(responseText){
-			alert(responseText);
-		}
-}
