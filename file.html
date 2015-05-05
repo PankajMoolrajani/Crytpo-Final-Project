@@ -10,23 +10,31 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <script type="text/javascript" src="scripts/lib/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="scripts/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+
 </head>
 <body>
 
 <section>
     <div class="container glass-container login-container">
         <h1>Upload file</h1>
-        <form role="form">
+        <form action="php/upload.php" method="post" enctype="multipart/form-data" role="form">
             <span class="btn btn-default btn-file">
-                Browse <input type="file">
+                <input name="fileToUpload" id="fileToUpload" type="file">
+              <input type="submit" value="Upload Image" name="submit">  
             </span>
         </form>
     </div>
     <div class="container glass-container login-container">
         <h1>Download File</h1>
-        <form method="get" action="file.doc">
-            <button type="submit">Download!</button>
-        </form>
+        <button type="button" id="btn-show-files" class="btn btn-default">Show Files</button>
+        <div id="div-show-files">
+            Click on button to show your files !
+        </div>
+        <!--<form method="get" action="php/download.php">
+            <button type="submit" id="submit-download-file">Download!</button>
+        </form>-->
+        <button type="submit" id="submit-download-file">Download!</button>
     </div>
 </section>
 <script type="text/javascript" src="scripts/login.js"></script>

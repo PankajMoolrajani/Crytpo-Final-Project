@@ -1,0 +1,17 @@
+Initializing nautilus-gdu extension
+Nautilus-Share-Message: Called "net usershare info" but it failed: 'net usershare' returned error 255: net usershare: cannot open usershare directory /var/lib/samba/usershares. Error No such file or directory
+Please ask your system administrator to enable user sharing.
+
+Nautilus-Share-Message: Called "net usershare info" but it failed: 'net usershare' returned error 255: net usershare: cannot open usershare directory /var/lib/samba/usershares. Error No such file or directory
+Please ask your system administrator to enable user sharing.
+
+
+(nautilus:7787): Gtk-WARNING **: Attempting to store changes into `/root/.local/share/recently-used.xbel', but failed: Failed to create file '/root/.local/share/recently-used.xbel.8145XX': No such file or directory
+
+(nautilus:7787): Gtk-WARNING **: Attempting to set the permissions of `/root/.local/share/recently-used.xbel', but failed: No such file or directory
+
+(nautilus:7787): GLib-GIO-WARNING **: Missing callback called fullpath = /root/.local/share/recently-used.xbel
+
+
+(gedit:7812): GLib-GIO-WARNING **: Missing callback called fullpath = /root/.local/share/recently-used.xbel
+
